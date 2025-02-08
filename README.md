@@ -25,7 +25,7 @@ Once downloaded, extract and paste the `classifiers` directory into the root of 
 ### 3. Install Dependencies
 Ensure you have **Python 3.9+** installed, then run:
 ```sh
-pip install -r requirements.txt
+pip install -r .\requirements.txt
 ```
 
 ### 4. Run the Web Application
