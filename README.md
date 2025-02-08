@@ -46,9 +46,4 @@ streamlit run ./web_app/run_ui.py
 ## Contributors
 - **Idan Arbiv**
 
-## License
-This project is licensed under the MIT License.
-
-## Contact
-For issues or contributions, please open an issue on [GitHub](https://github.com/IdanArbiv/Action-Detector-System).
 
