@@ -3,10 +3,27 @@ import sys
 
 import streamlit as st
 sys.path.append(os.getcwd())
-
+from nltk.data import find
+from nltk import download
 from classifiers.BestClassifier import TextClassifier
 
 from parameter_finder.ParameterFinder import ParameterFinder
+
+
+def download_nltk_resources():
+    resources = ['punkt', 'stopwords', 'averaged_perceptron_tagger', 'wordnet']
+
+    for resource in resources:
+        try:
+            find(f'tokenizers/{resource}')
+            print(f'{resource} already downloaded.')
+        except LookupError:
+            print(f'Downloading {resource}...')
+            download(resource)
+
+
+# Call this function when the app starts
+download_nltk_resources()
 
 @st.cache_resource
 def get_parameter_finder():
@@ -22,6 +39,7 @@ st.markdown("""
     <style>
     [data-testid="stAppViewContainer"] {
     background-color: #e5ff00;
+    color: black;
     }
     </style>
     """, unsafe_allow_html=True)
