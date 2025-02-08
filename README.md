@@ -31,7 +31,7 @@ pip install -r .\requirements.txt
 ### 4. Run the Web Application
 Launch the Streamlit interface with:
 ```sh
-streamlit run ./web_app/run_ui.py
+streamlit run .\web_app\run_ui.py
 ```
 
 ## Usage
