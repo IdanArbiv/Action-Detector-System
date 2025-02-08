@@ -16,14 +16,19 @@ To set up and run the system, follow these steps:
 git clone https://github.com/IdanArbiv/Action-Detector-System.git
 cd Action-Detector-System
 ```
+### 2. Download the Classifiers Directory
+After cloning the repository, download the `classifiers` directory from the following link:  
+[Download Classifiers Directory](https://drive.google.com/drive/folders/1hXqL2rggNzm3vS047ZNr9z2NOAkIbYOo?hl=he)
 
-### 2. Install Dependencies
+Once downloaded, extract and paste the `classifiers` directory into the root of the project.
+
+### 3. Install Dependencies
 Ensure you have **Python 3.9+** installed, then run:
 ```sh
 pip install -r requirements.txt
 ```
 
-### 3. Run the Web Application
+### 4. Run the Web Application
 Launch the Streamlit interface with:
 ```sh
 streamlit run ./web_app/run_ui.py
