@@ -1,5 +1,8 @@
 # Action-Detector-System
 
+![Action-Detector-System](web_app.jpg)
+
+
 ## Overview
 The **Action Detector System** is a machine learning-based application designed to analyze game commentary transcripts and extract valid action phrases. The system identifies whether a detected action accurately represents an event on the court.
 
